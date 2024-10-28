@@ -3,6 +3,9 @@
 int[] numbers = new int[10]; // Neues Array mit einer Größe von 10, d. h. es passen 10 Zahlen hinein
 Console.WriteLine(numbers.Length); // Gibt die Größe 10 aus
 
+// Seit C# 12 lassen sich Arrays so initialisieren
+int[] filledNumberArray = [56, 344, 345, 90, -12];
+
 numbers[0] = 1;
 numbers[1] = 2;
 numbers[2] = 3;

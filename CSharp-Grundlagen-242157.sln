@@ -11,6 +11,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "M002-Variablen", "M002-Vari
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M002-Variables", "M002-Variables\M002-Variables.csproj", "{77A15E07-7EFC-44D3-9FFD-4EF32F61B6FC}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "M003-Arrays-If", "M003-Arrays-If", "{3B4CC5AE-853D-4D94-9D38-A7E8F53557A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M003-Arrays", "M003-Arrays\M003-Arrays.csproj", "{0CD0AF41-55C6-4E78-954A-7FDDDDA2C788}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +29,10 @@ Global
 		{77A15E07-7EFC-44D3-9FFD-4EF32F61B6FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{77A15E07-7EFC-44D3-9FFD-4EF32F61B6FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{77A15E07-7EFC-44D3-9FFD-4EF32F61B6FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0CD0AF41-55C6-4E78-954A-7FDDDDA2C788}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CD0AF41-55C6-4E78-954A-7FDDDDA2C788}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CD0AF41-55C6-4E78-954A-7FDDDDA2C788}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CD0AF41-55C6-4E78-954A-7FDDDDA2C788}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,6 +40,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{D88E4178-5756-4C32-BB94-7CF6AC04A151} = {849929BA-4066-4FFE-A483-8B28E574349C}
 		{77A15E07-7EFC-44D3-9FFD-4EF32F61B6FC} = {E66E982B-475B-4E9A-A840-B8C99A4654EE}
+		{0CD0AF41-55C6-4E78-954A-7FDDDDA2C788} = {3B4CC5AE-853D-4D94-9D38-A7E8F53557A8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8EA95C3A-B1A4-435B-98E9-50DB9B8F7C40}

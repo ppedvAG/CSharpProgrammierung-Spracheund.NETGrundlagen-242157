@@ -6,6 +6,7 @@
     <RootNamespace>M005_Functions</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <StartupObject>Primenumbers.Program</StartupObject>
   </PropertyGroup>
 
 </Project>

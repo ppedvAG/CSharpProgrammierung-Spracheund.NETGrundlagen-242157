@@ -6,6 +6,7 @@
     <RootNamespace>M004_Loops_Enums</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <StartupObject>Primenumbers.Program</StartupObject>
   </PropertyGroup>
 
 </Project>

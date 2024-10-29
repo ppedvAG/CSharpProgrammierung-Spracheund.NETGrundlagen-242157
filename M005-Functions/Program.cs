@@ -47,6 +47,36 @@
             {
                 Console.WriteLine($"Eingabe '{input}' ist keine Zahl");
             }
+
+
+            #region Erklaerung Speichermanagement fuer Funktionen und Parameteruebergabe als value oder reference
+
+            double d;           // reserviere 8 bytes im speicher
+            d = 54.34;          // die leeren bytes mit dem Wert beschreiben
+            string errorMessage;  // reserviere Speicher fuer einen string
+
+            // Wir koennen Werte als Referenz oder Value uebergeben
+            // Wenn wir Werte als Value uebergeben wird jedes Mal eine Kopie erstellt
+            // 54.34 wird als Kopie an die Funktion Divide uebergeben
+            // Aber das Keyword out und ref signalisiert, dass wird eine Referenz uebergeben
+            // Eine Referenz speichert die Speicheradresse des uebergebenen Werts
+            // Wir sagen also der Funktion 'Divide', wohin sie den string schreiben soll
+
+            Divide(d, .8, out errorMessage);        // doubles werden kopiert und an Funktion übergeben
+
+            Console.WriteLine("d gesetzt mit: " + d);
+
+            ChangeValue(d);
+
+            Console.WriteLine("d bleibt d: " + d);
+
+            ChangeValueByRef(ref d);
+
+            Console.WriteLine("d wurde veraendert: " + d);
+
+            #endregion
+
+            Console.ReadLine();
         }
 
         static int Add(int a, int b, int c = 0)
@@ -84,6 +114,19 @@
 
             error = string.Empty;
             return a / b;
+        }
+
+        static void ChangeValue(double value)
+        {
+            value = 42;
+            Console.WriteLine("Change value: " + value);
+        }
+
+        // Unterschied ref und out: out darf nicht initialisiert sein
+        static void ChangeValueByRef(ref double value)
+        {
+            value = 37;
+            Console.WriteLine("Change value: " + value);
         }
     }
 }

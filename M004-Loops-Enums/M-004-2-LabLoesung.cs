@@ -32,9 +32,8 @@
                             isPrime = false;
                             break;
                         }
+                        isPrime = true;
                     }
-
-                    isPrime = true;
                 }
 
                 if (isPrime)

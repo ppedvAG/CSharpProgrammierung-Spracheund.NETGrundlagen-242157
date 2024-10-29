@@ -55,11 +55,11 @@ Kurs Repository zu Kurs C# Programmierung - Sprache und .NET Grundlagen der pped
 	-	[x]  ref 
 
 ## M08 | OOP - VERERBUNG und ZUGRIFFSMODIFIER
-	-	[ ]  Vererbung
-	-	[ ]  base
-	-	[ ]  virtuelle Member   
+	-	[x]  Vererbung
+	-	[x]  base
+	-	[x]  virtuelle Member   
 	-	[ ]  Überschreibungen verhindern
-	-	[ ]  Zugriffsmodifier 
+	-	[x]  Zugriffsmodifier 
 
 ## M09 | OOP - POLYMORPHISMUS und TYPEN
 	-	[ ]  Polymorphismus

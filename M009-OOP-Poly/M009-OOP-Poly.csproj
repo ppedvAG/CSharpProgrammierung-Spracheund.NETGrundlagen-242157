@@ -6,6 +6,7 @@
     <RootNamespace>M009_OOP_Poly</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <StartupObject>M009_OOP_Poly.Program</StartupObject>
   </PropertyGroup>
 
 </Project>

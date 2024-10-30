@@ -6,6 +6,7 @@
     <RootNamespace>M006_OOP</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <StartupObject>M006_OOP.Program</StartupObject>
   </PropertyGroup>
 
 </Project>

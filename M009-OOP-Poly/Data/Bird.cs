@@ -17,6 +17,11 @@
         {
             Console.WriteLine("Flap");
         }
+
+        public override CreatureBase Reproduce(string childName)
+        {
+            return new Bird(Name + " Junior", 0);
+        }
     }
 
 }

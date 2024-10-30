@@ -16,6 +16,9 @@ namespace M009_OOP_Poly
             CreatureBase duck = CreateCreature("Duck");
             CheckForHumanCreatureToDoSomeWork(duck);
 
+            // Wir koennen keine Instanz der abstrakten Klasse erstellen
+            //var unknownCreature = new CreatureBase();
+
             Console.ReadKey();
         }
 
@@ -59,10 +62,7 @@ namespace M009_OOP_Poly
             }
             else
             {
-                return new Human(name, Random.Shared.Next(18, 62))
-                {
-                    Job = job
-                };
+                return new Human(name, job);
             }
         }
     }

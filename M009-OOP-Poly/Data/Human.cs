@@ -4,13 +4,19 @@
     {
         public string Job { get; set; }
 
-        public Human(string name, int age) : base(name, age)
+        public Human(string name, string job) : base(name, Random.Shared.Next(18, 88))
         {
+            Job = job;
         }
 
         public void DoWork()
         {
             Console.WriteLine($"{Name} geht als {Job} arbeiten.");
+        }
+
+        public override CreatureBase Reproduce(string childName)
+        {
+            return new Human(childName, "Aufwachsen");
         }
     }
 }

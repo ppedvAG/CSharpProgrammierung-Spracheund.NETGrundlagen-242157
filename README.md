@@ -77,10 +77,10 @@ Kurs Repository zu Kurs C# Programmierung - Sprache und .NET Grundlagen der pped
 	-	[ ]  Refactoring in M007_OOP-GP: Factory.CreateRandomPerson()
 
 ## M12 | FEHLERBEHANDLUNG und UNIT-TESTS
-	-	[ ]  try-catch  
-	-	[ ]  eigene Exceptions 
-	-	[ ]  UnitTests mit AAA-Pattern
-	-	[ ]  Assert References
+	-	[x]  try-catch  
+	-	[x]  eigene Exceptions 
+	-	[x]  UnitTests mit AAA-Pattern
+	-	[x]  Assert References
 	-	[ ]  UnitTests DataRow
 
 ## M13 | DELEGATES und EVENTS

@@ -1,12 +1,11 @@
 using Bogus;
+using FahrzeugLib;
 using Fahrzeugpark;
 
 namespace FahrzeugGUI
 {
     public partial class Form1 : Form
     {
-        Faker faker = new Faker();
-
         //Liste zum Speichern der erstellten Fahrzeuge
         public List<Fahrzeug> Fahrzeugliste { get; set; }
 
@@ -37,17 +36,9 @@ namespace FahrzeugGUI
         private void Btn_Neu_Click(object sender, EventArgs e)
         {
             //Erstellen eines neuen Fahrzeuges und Einfügen in die Liste
-            this.Fahrzeugliste.Add(GeneriereFahrzeug());
+            this.Fahrzeugliste.Add(Generator.Fahrzeug());
             //Aktualisierung der ListBox
             this.UpdateGui();
-        }
-
-        private Fahrzeug GeneriereFahrzeug()
-        {
-            var name = $"{faker.Vehicle.Manufacturer()} {faker.Vehicle.Model()}";
-            var topSpeed = faker.Random.Int(50, 300);
-            var price = Math.Round(faker.Random.Double(1e4, 1e5));
-            return new Fahrzeug(name, topSpeed, price);
         }
 
         //Event-Handler des 'Löschen'-Buttons

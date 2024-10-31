@@ -18,9 +18,13 @@ namespace Lab12_ExcpetionHandling.Variante2
             //SplitTerm kann Null zurückgeben (führt bei Zugriff auf Array in nächster Zeile zu NullReferenceException)
             string[] zahlen = this.SplitTerm();
 
-            //Parsing kann FormatExceptions und OverflowExceptions verursachen
-            this.Zahl1 = int.Parse(zahlen[0]);
-            this.Zahl2 = int.Parse(zahlen[1]);
+            if (zahlen.Length == 2)
+            {
+                //Parsing kann FormatExceptions und OverflowExceptions verursachen
+                // mit string.Trim() entfernen wir whitespaces
+                this.Zahl1 = int.TryParse(zahlen[0].Trim(), out var zahl1) ? zahl1 : 0;
+                this.Zahl2 = int.TryParse(zahlen[1].Trim(), out var zahl2) ? zahl2 : 0;
+            }
         }
 
         private Rechenoperation GetRechenoperation()
@@ -50,7 +54,7 @@ namespace Lab12_ExcpetionHandling.Variante2
                 case Rechenoperation.Division:
                     return this.Eingabe.Split('/');
             }
-            return null; //Null-Rückgabe kann später eine NullReferenceException verursachen
+            return [];
         }
     }
 }

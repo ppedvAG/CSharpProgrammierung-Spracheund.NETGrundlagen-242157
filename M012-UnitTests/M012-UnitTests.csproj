@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -19,6 +19,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\M006-OOP\M006-OOP.csproj" />
+    <ProjectReference Include="..\M012-Exceptions\M012-Exceptions.csproj" />
   </ItemGroup>
 
   <ItemGroup>

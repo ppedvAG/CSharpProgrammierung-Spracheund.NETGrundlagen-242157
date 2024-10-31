@@ -6,6 +6,7 @@
     <RootNamespace>M012_Exceptions</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <StartupObject>Lab12_ExcpetionHandling.Variante2.Program</StartupObject>
   </PropertyGroup>
 
 </Project>

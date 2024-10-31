@@ -1,6 +1,7 @@
+using M012_Exceptions.Lab;
 using System;
 
-namespace Lab12_ExcpetionHandling
+namespace Lab12_ExcpetionHandling.Variante1
 {
 
     class Program

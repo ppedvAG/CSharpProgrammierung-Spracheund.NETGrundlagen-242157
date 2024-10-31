@@ -1,4 +1,6 @@
-﻿namespace Lab12_ExcpetionHandling
+﻿using M012_Exceptions.Lab;
+
+namespace Lab12_ExcpetionHandling.Variante1
 {
     public class Term
     {
